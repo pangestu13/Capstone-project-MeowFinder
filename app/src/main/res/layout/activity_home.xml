@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     tools:context=".Home">
 
 <!--    <FrameLayout-->
@@ -15,60 +15,68 @@
 
         <!-- Auto layout, variables, and unit scale are not yet supported -->
 
-<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
-<!--            android:id="@+id/constraintLayout"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="270dp"-->
-<!--            android:background="@drawable/background_top"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent">-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
 
-<!--                <TextView-->
-<!--                    android:id="@+id/textView"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginStart="32dp"-->
-<!--                    android:layout_marginTop="50dp"-->
-<!--                    android:fontFamily="@font/poppins_bold"-->
-<!--                    android:text="Meow Finder"-->
-<!--                    android:textStyle="bold"-->
-<!--                    android:textColor="#ffffff"-->
-<!--                    android:textSize="32dp"-->
-<!--                    app:layout_constraintStart_toStartOf="parent"-->
-<!--                    app:layout_constraintTop_toTopOf="parent" />-->
-
-<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
-
-<!--        <EditText-->
-<!--            android:id="@+id/editTextTextPersonName"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="64dp"-->
-<!--            android:layout_marginEnd="64dp"-->
-<!--            android:background="@drawable/cardbottob_background"-->
-<!--            android:drawableStart="?android:attr/actionModeWebSearchDrawable"-->
-<!--            android:elevation="20dp"-->
-<!--            android:ems="10"-->
-<!--            android:hint="Search for ..."-->
-<!--            android:inputType="textPersonName"-->
-
-<!--            android:padding="10dp"-->
-<!--            android:textSize="14sp"-->
-<!--            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />-->
+            android:background="@drawable/background_top"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
 
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/circles"/>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Meow Finder"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:textSize="32dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="64dp"
+            android:background="@drawable/cardbottob_background"
+            android:drawableStart="?android:attr/actionModeWebSearchDrawable"
+            android:elevation="20dp"
+            android:ems="10"
+            android:hint="Search for ..."
+            android:inputType="textPersonName"
+
+            android:padding="10dp"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_navigation"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:background="@color/primer"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_nav"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:menu="@menu/bottom_navigation_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
