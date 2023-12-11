@@ -6,22 +6,69 @@
     android:layout_height="wrap_content"
     tools:context=".Home">
 
-    <FrameLayout
-        android:layout_width="0dp"
-        android:layout_height="735dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent">
-    </FrameLayout>
+<!--    <FrameLayout-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="735dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent">-->
+<!--    </FrameLayout>-->
+
+        <!-- Auto layout, variables, and unit scale are not yet supported -->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:id="@+id/constraintLayout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="270dp"-->
+<!--            android:background="@drawable/background_top"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="32dp"-->
+<!--                    android:layout_marginTop="50dp"-->
+<!--                    android:fontFamily="@font/poppins_bold"-->
+<!--                    android:text="Meow Finder"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="#ffffff"-->
+<!--                    android:textSize="32dp"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextTextPersonName"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="64dp"-->
+<!--            android:layout_marginEnd="64dp"-->
+<!--            android:background="@drawable/cardbottob_background"-->
+<!--            android:drawableStart="?android:attr/actionModeWebSearchDrawable"-->
+<!--            android:elevation="20dp"-->
+<!--            android:ems="10"-->
+<!--            android:hint="Search for ..."-->
+<!--            android:inputType="textPersonName"-->
+
+<!--            android:padding="10dp"-->
+<!--            android:textSize="14sp"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />-->
+
 
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
-        android:background="@color/primer"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="parent"
-        app:menu="@menu/bottom_navigation_menu" />
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/primer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:menu="@menu/bottom_navigation_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
