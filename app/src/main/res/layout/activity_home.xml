@@ -29,7 +29,8 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:src="@drawable/circles"/>
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/circles" />
 
                 <TextView
                     android:id="@+id/textView"
