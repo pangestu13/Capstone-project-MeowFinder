@@ -6,43 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".Home">
 
-<!--    <FrameLayout-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="735dp"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent">-->
-<!--    </FrameLayout>-->
-
-        <!-- Auto layout, variables, and unit scale are not yet supported -->
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-
             android:background="@drawable/background_top"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
 
                 <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/circles" />
+                    android:src="@drawable/circles"
+                    tools:ignore="MissingConstraints" />
 
                 <TextView
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginTop="50dp"
+                    android:layout_marginStart="39dp"
+                    android:layout_marginTop="35dp"
                     android:fontFamily="@font/poppins_bold"
                     android:text="Meow Finder"
-                    android:textStyle="bold"
                     android:textColor="#ffffff"
                     android:textSize="32dp"
+                    android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -50,34 +43,182 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/editTextTextPersonName"
-            android:layout_width="300dp"
+            android:layout_width="330dp"
             android:layout_height="150dp"
             android:layout_marginStart="64dp"
             android:layout_marginEnd="64dp"
             android:background="@drawable/cardbottob_background"
             android:drawableStart="?android:attr/actionModeWebSearchDrawable"
             android:elevation="20dp"
-            android:ems="10"
-            android:hint="Search for ..."
-            android:inputType="textPersonName"
 
-            android:padding="10dp"
-            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
-
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/imageView4"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginTop="16dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:src="@drawable/cat_persian"
+                                    app:layout_constraintBottom_toTopOf="@+id/textView3"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/textView3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/cat_persian"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="@+id/imageView4"
+                                    app:layout_constraintStart_toStartOf="@+id/imageView4"
+                                    app:layout_constraintTop_toBottomOf="@+id/imageView4"
+                                    tools:ignore="DuplicateIds" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/imageView4"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginTop="16dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:src="@drawable/cat_british_shorthair"
+                                    app:layout_constraintBottom_toTopOf="@+id/textView3"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/textView3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/string_britis_shorthair"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="@+id/imageView4"
+                                    app:layout_constraintStart_toStartOf="@+id/imageView4"
+                                    app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                 android:layout_weight="1"
+                 android:orientation="horizontal"
+                  tools:layout_editor_absoluteX="0dp"
+                 tools:layout_editor_absoluteY="467dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            app:layout_constraintBottom_toTopOf="@+id/textView3"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:src="@drawable/whiskas"/>
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/wiskas"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/imageView4"
+                            app:layout_constraintStart_toStartOf="@+id/imageView4"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+                            tools:ignore="DuplicateIds" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:src="@drawable/royal_canin"
+                            app:layout_constraintBottom_toTopOf="@+id/textView3"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/royal_canin"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/imageView4"
+                            app:layout_constraintStart_toStartOf="@+id/imageView4"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        </LinearLayout>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_navigation"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="67dp"
             android:background="@drawable/background_nav"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:menu="@menu/bottom_navigation_menu" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
