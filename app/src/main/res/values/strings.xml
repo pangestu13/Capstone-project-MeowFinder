@@ -11,4 +11,7 @@
     <string name="hello_camera_fragment">Hello kamera fragment</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello profile fragment</string>
+    <string name="take_foto">Ambil Foto</string>
+    <string name="teke_galeri">Ambil Foto dari Galeri</string>
+    <string name="ambil_atau_pilih_foto">Ambil atau Pilih Foto</string>
 </resources>
