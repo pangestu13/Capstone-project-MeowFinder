@@ -7,4 +7,8 @@
     <string name="string_britis_shorthair">British Shorthair</string>
     <string name="wiskas">Whiskas</string>
     <string name="royal_canin">Royal Canin</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_camera_fragment">Hello kamera fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello profile fragment</string>
 </resources>
