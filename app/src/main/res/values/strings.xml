@@ -14,4 +14,9 @@
     <string name="take_foto">Ambil Foto</string>
     <string name="teke_galeri">Ambil Foto dari Galeri</string>
     <string name="ambil_atau_pilih_foto">Ambil atau Pilih Foto</string>
+    <string name="Profile">Profile</string>
+    <string name="name_profile">Danel Purwadi</string>
+    <string name="username">@Purwadi13</string>
+    <string name="email">daniel1123@gmail.com</string>
+    <string name="edit_profile">Edit Profile</string>
 </resources>
