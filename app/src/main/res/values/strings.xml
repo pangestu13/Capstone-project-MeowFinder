@@ -19,4 +19,5 @@
     <string name="username">@Purwadi13</string>
     <string name="email">daniel1123@gmail.com</string>
     <string name="edit_profile">Edit Profile</string>
+    <string name="save_change">Save Change</string>
 </resources>
