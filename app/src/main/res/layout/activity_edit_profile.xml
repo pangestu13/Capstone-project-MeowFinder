@@ -6,14 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".EditProfileActivity">
 
-    <?xml version="1.0" encoding="utf-8"?>
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        tools:context=".ProfileFragment">
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
@@ -48,9 +40,9 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="@string/Profile"
+                    android:text="Edit Profile"
                     android:textSize="20dp"
-                    android:layout_marginRight="10dp"/>
+                    android:layout_marginLeft="60dp"/>
 
             </LinearLayout>
 
@@ -97,7 +89,7 @@
                 android:layout_margin="20dp"
                 android:orientation="vertical">
 
-                <!--            //username-->
+<!--                neme-->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -105,46 +97,67 @@
                     android:textSize="14dp"
                     android:fontFamily="@font/poppinslight"/>
 
-
                 <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="55dp"
+                    android:hint="   Enter Full Name"
+                    android:background="@drawable/button_shape"
                     />
                 <View
                     android:layout_width="match_parent"
                     android:visibility="visible"
                     android:layout_height="1dp"
-                    android:background="@color/black"/>
+                    android:background="@color/black"
+                    android:layout_marginTop="12dp"/>
+
+<!--                username-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Full Name"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/poppinslight"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:hint="   Enter Username"
+                    android:background="@drawable/button_shape"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:visibility="visible"
+                    android:layout_height="1dp"
+                    android:background="@color/black"
+                    android:layout_marginTop="12dp"/>
 
                 <!--            email-->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
                     android:text="Email"
                     android:textSize="14dp"
                     android:fontFamily="@font/poppinslight"/>
 
-                <TextView
-                    android:id="@+id/id_email"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/email"
-                    android:textSize="20dp"
-                    android:fontFamily="@font/poppins_bold"
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:hint="   Enter Email"
+                    android:background="@drawable/button_shape"
                     />
                 <View
                     android:layout_width="match_parent"
                     android:visibility="visible"
                     android:layout_height="1dp"
-                    android:background="@color/black"/>
+                    android:background="@color/black"
+                    android:layout_marginTop="12dp"/>
 
                 <!--            button-->
                 <Button
                     android:id="@+id/save_change"
-                    android:layout_width="189dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="150dp"
+                    android:layout_marginTop="15dp"
                     android:text="@string/save_change"
                     android:layout_gravity="center_horizontal"
                     android:textColor="@color/black"/>
@@ -153,8 +166,4 @@
             </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,17 +25,10 @@ class MainActivity : AppCompatActivity() {
 
                 else ->{
 
-
-
                 }
-
             }
-
             true
-
         }
-
-
     }
 
     private fun replaceFragment(fragment : Fragment){
