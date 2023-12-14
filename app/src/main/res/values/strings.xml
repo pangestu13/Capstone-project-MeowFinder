@@ -20,4 +20,10 @@
     <string name="email">daniel1123@gmail.com</string>
     <string name="edit_profile">Edit Profile</string>
     <string name="save_change">Save Change</string>
+    <string name="cat_name">Kucing Himalaya</string>
+    <string name="description">"  Kucing Himalaya, yang juga dikenal sebagai \"Himmies\", adalah ras persilangan antara kucing Persia dan Siam yang pertama kali dikembangkan di Amerika Serikat. Dari persilangan tersebut, menghasilkan kucing dengan penampilan cantik, bulu panjang dan halus seperti bulu Persia serta warna khas seperti bulu Siam pada area telinga, ekor, wajah, dan cakarnya.  \n Himalaya juga merupakan keturuana pada leluhur Siam mereka. Kucing Himalaya berukuran besar, ditambah bulu yang lebat, panjang, dan mewah, yang membuatnya semakin besar.  Namun, kucing Himalaya dianggap sebagai \"raksasa lembut\" di dunia kucing. Himalaya juga merupakan ras kucing paling populer kedua di dunia dan banyak dipelihara.  \n"</string>
+    <string name="adopt">Adopt Us</string>
+    <string name="item_name">Whiskas</string>
+    <string name="description_item">Deskripsi\n\nWHISKAS Makanan Kucing Kering Adult Fungsional Indoor - 1.1kg\nTersedia ukuran:\n- Indoor 1.1kg\nSebagai pembuat WHISKAS, kami tahu bahwa kucing rumahan memiliki kebutuhan diet khusus untuk menyesuaikan gaya hidup mereka yang santai. Kucing dalam ruangan menghabiskan sebagian besar waktunya untuk tidur dan bersantai di tempat favoritnya, sehingga mereka kurang aktif dan membutuhkan lebih sedikit energi. \n</string>
+    <string name="btn_BuyItem">Buy Now</string>
 </resources>
