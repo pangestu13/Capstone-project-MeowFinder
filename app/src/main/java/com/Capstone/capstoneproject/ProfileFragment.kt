@@ -1,5 +1,6 @@
 package com.Capstone.capstoneproject
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -14,15 +15,20 @@ class ProfileFragment : Fragment(), View.OnClickListener{
     private var _binding: FragmentProfileBinding? = null
     private lateinit var btneditprofile: Button
 
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-
+        
 //        btneditprofile = findViewById(R.id.edit_profile)
 //        btneditprofile = setOnCliclistener {
 //            val intent = Intent(this, EditProfileActivity::class.java)
 //            StartAntivity(intent)
 //        }
+
+//        val btnmusclesholder :Button = findViewById(R.id.edit_profile)
+//        btnmusclesholder.setOnClickListener(this)
 
     }
 
@@ -50,7 +56,12 @@ class ProfileFragment : Fragment(), View.OnClickListener{
             }
     }
     override fun onClick(v: View) {
+//        when (v?.id) {
+//            R.id.edit_profile -> {
+//                val moveIntent = Intent(this@ProfileFragment, EditProfileActivity::class.java)
+//                startActivity(moveIntent)
+//
+//            }
 
+        }
     }
-
-}
