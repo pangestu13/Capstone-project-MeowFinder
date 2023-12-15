@@ -7,23 +7,38 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.navigation.fragment.findNavController
 import com.Capstone.capstoneproject.databinding.FragmentProfileBinding
 import kotlinx.coroutines.Dispatchers.Main
 
 
-class ProfileFragment : Fragment(), View.OnClickListener{
+class ProfileFragment : Fragment(), View.OnClickListener {
 
+    private lateinit var btnIntent: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
+
 
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val EditProfileActivity:Button = view.findViewById(R.id.btn_edit_profile)
-        EditProfileActivity.setOnClickListener(this)
+        btnIntent = view.findViewById(R.id.btn_edit_profile)
+        btnIntent.setOnClickListener(this)
+
     }
+    override fun onClick(v: View) {
+        when(v.id){
+            R.id.btn_edit_profile -> run{
+                val intentku = Intent(requireContext(), EditProfileActivity::class.java)
+                startActivity(intentku)
+            }
+        }
+    }
+
 
 
     override fun onCreateView(
@@ -36,6 +51,5 @@ class ProfileFragment : Fragment(), View.OnClickListener{
 
 
 
-    override fun onClick(v: View) {
-}
+
 }
