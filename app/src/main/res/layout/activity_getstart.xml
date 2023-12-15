@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.Capstone.getstarted.getstartActivity">
+
+    <TextView
+        android:id="@+id/titletv"
+        android:layout_width="365dp"
+        android:layout_height="98dp"
+        android:text="@string/getstart"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <ImageView
+        android:id="@+id/getstartiv"
+        android:layout_width="350dp"
+        android:layout_height="327dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titletv"
+        app:layout_constraintVertical_bias="0.085"
+        app:srcCompat="@drawable/gets" />
+
+    <TextView
+        android:id="@+id/desctv"
+        android:layout_width="361dp"
+        android:layout_height="83dp"
+        android:gravity="center"
+        android:text="@string/start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getstartiv"
+        app:layout_constraintVertical_bias="0.155" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/getstartbt"
+        android:layout_width="342dp"
+        android:layout_height="58dp"
+        android:text="@string/getstarted"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desctv" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

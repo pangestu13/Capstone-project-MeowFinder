@@ -26,4 +26,7 @@
     <string name="item_name">Whiskas</string>
     <string name="description_item">Deskripsi\n\nWHISKAS Makanan Kucing Kering Adult Fungsional Indoor - 1.1kg\nTersedia ukuran:\n- Indoor 1.1kg\nSebagai pembuat WHISKAS, kami tahu bahwa kucing rumahan memiliki kebutuhan diet khusus untuk menyesuaikan gaya hidup mereka yang santai. Kucing dalam ruangan menghabiskan sebagian besar waktunya untuk tidur dan bersantai di tempat favoritnya, sehingga mereka kurang aktif dan membutuhkan lebih sedikit energi. \n</string>
     <string name="btn_BuyItem">Buy Now</string>
+    <string name="getstart">Meet your cats needs here</string>
+    <string name="start">Make your beloved cat\'s life happier! Come on, use the MeowFinder application now to find the best equipment, food and cat needs, Give them the special care they deserve!</string>
+    <string name="getstarted">Get Started\n</string>
 </resources>
