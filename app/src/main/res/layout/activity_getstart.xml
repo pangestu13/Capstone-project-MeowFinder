@@ -45,11 +45,10 @@
         app:layout_constraintVertical_bias="0.155" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/getstartbt"
+        android:id="@+id/btn_getstartbt"
         android:layout_width="342dp"
-        android:layout_height="58dp"
+        android:layout_height="wrap_content"
         android:text="@string/getstarted"
-        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
