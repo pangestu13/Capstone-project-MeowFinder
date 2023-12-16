@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MeowFinder"
         tools:targetApi="31">
         <activity
+            android:name="com.Capstone.logined.LoginActivity"
+            android:exported="false" />
+        <activity
             android:name="com.Capstone.getstarted.getstartActivity"
             android:exported="false" />
         <activity
