@@ -1,5 +1,6 @@
 package com.Capstone.capstoneproject
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -22,7 +23,6 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding?.root
     }
@@ -38,10 +38,11 @@ class HomeFragment : Fragment() {
     }
 
 
+    @SuppressLint("ResourceType")
     private fun setupAction() {
         binding?.let { bind ->
             bind.btnRegister.setOnClickListener {
-                findNavController().navigate(R.id.buy_item)
+                startActivity((Intent(requireActivity(),BuyItemActivity::class.java)))
             }
         }
     }
