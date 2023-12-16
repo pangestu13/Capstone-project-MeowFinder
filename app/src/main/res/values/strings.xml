@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Meow Finder</string>
     <string name="favorites">Home</string>
-    <string name="camera">Kamera</string>
+    <string name="camera">Camera</string>
     <string name="profile">Profile</string>
     <string name="cat_persian">Persian</string>
     <string name="string_britis_shorthair">British Shorthair</string>
