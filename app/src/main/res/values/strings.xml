@@ -31,4 +31,10 @@
     <string name="getstarted">Get Started\n</string>
     <string name="login">Hello, CatsLovers!</string>
     <string name="imail">Email\n</string>
+    <string name="password">Password</string>
+    <string name="logined">Get Started</string>
+    <string name="lupapw">Forget Password ?</string>
+    <string name="punyaakun">Don’t have an account? </string>
+    <string name="buatakun">Create Account</string>
+    <string name="newakun">Create New Account</string>
 </resources>
