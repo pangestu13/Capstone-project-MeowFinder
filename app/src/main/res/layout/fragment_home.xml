@@ -184,17 +184,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="1">
 
+
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/btn_register"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
-                app:layout_constraintBottom_toTopOf="@+id/textView3"
+                android:src="@drawable/whiskas"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:src="@drawable/whiskas"/>
+                app:layout_constraintTop_toTopOf="parent" />
+
 
             <TextView
                 android:id="@+id/textView3"
@@ -204,10 +205,11 @@
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/imageView3"
-                app:layout_constraintStart_toStartOf="@+id/imageView3"
-                app:layout_constraintTop_toBottomOf="@+id/imageView3"
-                tools:ignore="DuplicateIds" />
+                app:layout_constraintEnd_toEndOf="@+id/btn_register"
+                app:layout_constraintStart_toStartOf="@+id/btn_register"
+                app:layout_constraintTop_toBottomOf="@+id/btn_register"
+                tools:ignore="DuplicateIds"
+                android:onClick="onClick"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout

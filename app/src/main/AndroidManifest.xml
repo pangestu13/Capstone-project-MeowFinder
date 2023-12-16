@@ -16,6 +16,9 @@
             android:name="com.Capstone.createaccount.CreateaccountActivity"
             android:exported="false" />
         <activity
+            android:name=".contoexample"
+            android:exported="false" />
+        <activity
             android:name="com.Capstone.logined.LoginActivity"
             android:exported="false" />
         <activity
