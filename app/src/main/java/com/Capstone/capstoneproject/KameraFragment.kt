@@ -47,9 +47,11 @@ class KameraFragment : Fragment(), View.OnClickListener{
     }
     //kamera
     private fun startCamera() {
-
+        currentImageUri = getImageUri(requireActivity())
         launcherIntentCamera.launch(currentImageUri)
     }
+
+
     private val launcherIntentCamera = registerForActivityResult(
         ActivityResultContracts.TakePicture()
     ) { isSuccess ->

@@ -39,13 +39,11 @@ android {
     buildFeatures{
         viewBinding = true
     }
-    dataBinding{
-        enable = true
-    }
 
 }
 
 dependencies {
+    val cameraxVersion = "1.2.3"
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
@@ -62,4 +60,8 @@ dependencies {
     implementation("androidx.activity:activity-ktx:1.8.0")
 
     implementation("com.loopj.android:android-async-http:1.4.9")
+
+    implementation("androidx.camera:camera-camera2:$cameraxVersion")
+    implementation("androidx.camera:camera-lifecycle:$cameraxVersion")
+    implementation("androidx.camera:camera-view:$cameraxVersion")
 }
