@@ -7,19 +7,35 @@
     android:layout_height="match_parent"
     tools:context="com.Capstone.createaccount.CreateaccountActivity">
 
-    <TextView
-        android:id="@+id/newakuntv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="@string/newakun"
-        android:textSize="45sp"
-        android:textStyle="bold"
-        android:layout_marginLeft="25dp"
-        app:layout_constraintTop_toTopOf="parent" />
+  <TextView
+      android:id="@+id/newakuntv"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="32dp"
+      android:text="@string/newakun"
+      android:textSize="45sp"
+      android:textStyle="bold"
+      android:textColor="@color/black"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/fullnameTextView"
+      android:layout_width="0dp"
+      android:layout_height="20dp"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="20dp"
+      android:alpha="0"
+      android:text="@string/fullname"
+      android:textColor="@color/black"
+      app:layout_constraintBottom_toTopOf="@+id/fullnameEditTextLayout"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:alpha="100" />
 
   <com.google.android.material.textfield.TextInputLayout
-      android:id="@+id/emailEditTextLayout"
+      android:id="@+id/fullnameEditTextLayout"
       style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
@@ -29,16 +45,156 @@
       android:alpha="0"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/logintv"
+      app:layout_constraintTop_toBottomOf="@+id/newakuntv"
+      tools:alpha="100">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/fullnameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="textEmailAddress"
+        tools:ignore="SpeakableTextPresentCheck" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <TextView
+      android:id="@+id/emailTextView"
+      android:layout_width="40dp"
+      android:layout_height="20dp"
+      android:layout_marginStart="32dp"
+      android:alpha="0"
+      android:text="@string/imail"
+      android:textColor="@color/black"
+      app:layout_constraintBottom_toTopOf="@+id/emailEditTextLayout"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:alpha="100" />
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/emailEditTextLayout"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="32dp"
+      android:layout_marginEnd="32dp"
+      android:alpha="0"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/fullnameEditTextLayout"
       tools:alpha="100">
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/emailEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email"
         android:ems="10"
+        android:hint="Email"
         android:inputType="textEmailAddress"
         tools:ignore="SpeakableTextPresentCheck" />
   </com.google.android.material.textfield.TextInputLayout>
-  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <TextView
+      android:id="@+id/passwordTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="8dp"
+      android:alpha="0"
+      android:text="@string/password"
+      android:textColor="@color/black"
+      app:layout_constraintBottom_toTopOf="@+id/passwordEditTextLayout"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:alpha="100" />
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/passwordEditTextLayout"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="32dp"
+      android:layout_marginEnd="32dp"
+      android:alpha="0"
+      app:endIconMode="password_toggle"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/emailEditTextLayout"
+      tools:alpha="100">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        tools:ignore="SpeakableTextPresentCheck" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <TextView
+      android:id="@+id/confirmpasswordTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="8dp"
+      android:alpha="0"
+      android:text="@string/confirmpassword"
+      android:textColor="@color/black"
+      app:layout_constraintBottom_toTopOf="@+id/confirmpasswordEditTextLayout"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:alpha="100" />
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/confirmpasswordEditTextLayout"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="32dp"
+      android:layout_marginEnd="32dp"
+      android:alpha="0"
+      app:endIconMode="password_toggle"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/passwordEditTextLayout"
+      tools:alpha="100">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/confirmpasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        tools:ignore="SpeakableTextPresentCheck" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:layout_marginTop="32dp"
+      android:layout_marginRight="20dp"
+      android:layout_marginLeft="20dp"
+      android:text="@string/createakun"
+      app:layout_constraintTop_toBottomOf="@+id/confirmpasswordEditTextLayout" />
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="70dp"
+      android:gravity="center"
+      android:text="@string/punyaakun"
+      android:textColor="@color/black"
+      app:layout_constraintBottom_toBottomOf="parent" />
+
+  <TextView
+      android:id="@+id/masuktv"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="110dp"
+      android:text="@string/masuk"
+      android:gravity="center"
+      app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

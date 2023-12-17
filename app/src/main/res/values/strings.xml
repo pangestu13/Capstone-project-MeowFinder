@@ -28,13 +28,18 @@
     <string name="btn_BuyItem">Buy Now</string>
     <string name="getstart">Meet your cats needs here</string>
     <string name="start">Make your beloved cat\'s life happier! Come on, use the MeowFinder application now to find the best equipment, food and cat needs, Give them the special care they deserve!</string>
-    <string name="getstarted">Get Started\n</string>
+    <string name="getstarted">Get Started</string>
     <string name="login">Hello, CatsLovers!</string>
     <string name="imail">Email\n</string>
     <string name="password">Password</string>
     <string name="logined">Get Started</string>
     <string name="lupapw">Forget Password ?</string>
-    <string name="punyaakun">Don’t have an account? </string>
+    <string name="tidakpunyaakun">Don’t have an account? </string>
     <string name="buatakun">Create Account</string>
     <string name="newakun">Create New Account</string>
+    <string name="fullname">Full Name</string>
+    <string name="confirmpassword">Confirm Password</string>
+    <string name="createakun">Create Account</string>
+    <string name="punyaakun">You have an account?</string>
+    <string name="masuk">Login</string>
 </resources>
