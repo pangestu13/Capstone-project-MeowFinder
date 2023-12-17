@@ -60,4 +60,6 @@ dependencies {
 
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
     implementation("androidx.activity:activity-ktx:1.8.0")
+
+    implementation("com.loopj.android:android-async-http:1.4.9")
 }

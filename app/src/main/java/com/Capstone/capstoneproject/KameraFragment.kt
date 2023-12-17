@@ -1,45 +1,78 @@
 package com.Capstone.capstoneproject
 
-import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
+import androidx.activity.result.PickVisualMediaRequest
+import androidx.activity.result.contract.ActivityResultContracts
+import com.Capstone.capstoneproject.databinding.FragmentKameraBinding
+import getImageUri
 
 
 class KameraFragment : Fragment(), View.OnClickListener{
 
-    private lateinit var btnIntentku: Button
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        btnIntentku =  view.findViewById(R.id.btn_take_foto)
-        btnIntentku.setOnClickListener(this)
-
-    }
-
-
-    override fun onClick(v: View) {
-        when(v.id){
-            R.id.btn_back_home -> run{
-                val intentk = Intent(requireContext(), MainActivity::class.java)
-                startActivity(intentk)
-            }
-        }
-    }
+    private var _binding: FragmentKameraBinding? = null
+    private val binding get() = _binding
+    private var currentImageUri: Uri? = null
 
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_kamera, container, false)
+        _binding = FragmentKameraBinding.inflate(inflater, container, false)
+        return _binding?.root
+
+
     }
+
+    //galeri
+    private fun startGallery() {
+        launcherGallery.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly))
+    }
+
+    private val launcherGallery = registerForActivityResult(
+        ActivityResultContracts.PickVisualMedia()
+    ) { uri: Uri? ->
+        if (uri != null) {
+            currentImageUri = uri
+        } else {
+            Log.d("Photo Picker", "No media selected")
+        }
+    }
+    //kamera
+    private fun startCamera() {
+
+        launcherIntentCamera.launch(currentImageUri)
+    }
+    private val launcherIntentCamera = registerForActivityResult(
+        ActivityResultContracts.TakePicture()
+    ) { isSuccess ->
+        if (isSuccess) {
+        }
+    }
+
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding?.btnTakeGaleri?.setOnClickListener { startGallery() }
+        binding?.btnTakeFoto?.setOnClickListener { startCamera() }
+
+    }
+
+    override fun onClick(v: View) {
+
+    }
+
+
 
 }

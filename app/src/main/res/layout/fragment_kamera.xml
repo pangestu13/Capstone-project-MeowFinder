@@ -62,7 +62,7 @@
             />
 
         <Button
-            android:id="@+id/take_galeri"
+            android:id="@+id/btn_take_galeri"
             android:layout_width="189dp"
             android:layout_height="wrap_content"
             android:text="@string/teke_galeri"
