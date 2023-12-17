@@ -18,6 +18,10 @@ class EditProfileActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit_profile)
+        val actionbar =supportActionBar
+        actionbar!!.title = "Edit Profile"
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+
         _binding = ActivityEditProfileBinding.inflate(layoutInflater)
         setupAction(_binding.root)
     }

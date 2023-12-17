@@ -26,7 +26,7 @@ class KameraFragment : Fragment(), View.OnClickListener{
 
     override fun onClick(v: View) {
         when(v.id){
-            R.id.btn_take_foto -> run{
+            R.id.btn_back_home -> run{
                 val intentk = Intent(requireContext(), MainActivity::class.java)
                 startActivity(intentk)
             }
