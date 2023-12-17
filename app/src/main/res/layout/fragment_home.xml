@@ -42,7 +42,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/editTextTextPersonName"
-        android:layout_width="330dp"
+        android:layout_width="350dp"
         android:layout_height="150dp"
         android:layout_marginStart="64dp"
         android:layout_marginEnd="64dp"
@@ -93,12 +93,21 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="450dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adopt Us"
+            android:textSize="18dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="24dp"
+            android:fontFamily="@font/poppins_bold"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -107,13 +116,14 @@
         android:orientation="horizontal"
         tools:ignore="MissingConstraints">
 
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1">
 
             <ImageView
-                android:id="@+id/imageView1"
+                android:id="@+id/btn_imageView1"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_marginStart="8dp"
@@ -133,9 +143,9 @@
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/imageView1"
-                app:layout_constraintStart_toStartOf="@+id/imageView1"
-                app:layout_constraintTop_toBottomOf="@+id/imageView1"
+                app:layout_constraintEnd_toEndOf="@+id/btn_imageView1"
+                app:layout_constraintStart_toStartOf="@+id/btn_imageView1"
+                app:layout_constraintTop_toBottomOf="@+id/btn_imageView1"
                 tools:ignore="DuplicateIds" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -145,7 +155,7 @@
             android:layout_weight="1">
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/btn_imageView2"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_marginStart="8dp"
@@ -165,11 +175,20 @@
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/imageView2"
-                app:layout_constraintStart_toStartOf="@+id/imageView2"
-                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+                app:layout_constraintEnd_toEndOf="@+id/btn_imageView2"
+                app:layout_constraintStart_toStartOf="@+id/btn_imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/btn_imageView2" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Best Seller"
+            android:textSize="18dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="24dp"
+            android:fontFamily="@font/poppins_bold"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -219,7 +238,7 @@
             android:layout_weight="1">
 
             <ImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/btn_imageView4"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_marginStart="8dp"
@@ -238,9 +257,9 @@
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/imageView4"
-                app:layout_constraintStart_toStartOf="@+id/imageView4"
-                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+                app:layout_constraintEnd_toEndOf="@+id/btn_imageView4"
+                app:layout_constraintStart_toStartOf="@+id/btn_imageView4"
+                app:layout_constraintTop_toBottomOf="@+id/btn_imageView4" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 
