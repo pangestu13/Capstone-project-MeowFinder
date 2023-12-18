@@ -1,4 +1,4 @@
-package com.Capstone.capstoneproject.menu
+package com.Capstone.capstoneproject.ui.menu
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

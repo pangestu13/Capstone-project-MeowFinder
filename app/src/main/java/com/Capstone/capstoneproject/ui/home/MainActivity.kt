@@ -1,10 +1,10 @@
-package com.Capstone.capstoneproject.home
+package com.Capstone.capstoneproject.ui.home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import com.Capstone.capstoneproject.Camera.KameraFragment
-import com.Capstone.capstoneproject.ProfileFragment
+import com.Capstone.capstoneproject.ui.Camera.KameraFragment
+import com.Capstone.capstoneproject.ui.ProfileFragment
 import com.Capstone.capstoneproject.R
 import com.Capstone.capstoneproject.databinding.ActivityMainBinding
 

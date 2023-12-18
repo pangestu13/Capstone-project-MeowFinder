@@ -1,4 +1,4 @@
-package com.Capstone.capstoneproject.Camera
+package com.Capstone.capstoneproject.ui.Camera
 
 import android.net.Uri
 import android.os.Bundle

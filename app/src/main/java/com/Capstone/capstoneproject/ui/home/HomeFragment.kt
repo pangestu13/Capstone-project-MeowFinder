@@ -1,4 +1,4 @@
-package com.Capstone.capstoneproject.home
+package com.Capstone.capstoneproject.ui.home
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -7,11 +7,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.Capstone.capstoneproject.menu.BuyWhiskas
+import com.Capstone.capstoneproject.ui.menu.BuyWhiskas
 import com.Capstone.capstoneproject.databinding.FragmentHomeBinding
-import com.Capstone.capstoneproject.menu.AdoptPersianActivity
-import com.Capstone.capstoneproject.menu.BritishShorthairActivity
-import com.Capstone.capstoneproject.menu.BuyRoyalCaninActivity
+import com.Capstone.capstoneproject.ui.menu.AdoptPersianActivity
+import com.Capstone.capstoneproject.ui.menu.BritishShorthairActivity
+import com.Capstone.capstoneproject.ui.menu.BuyRoyalCaninActivity
 
 class HomeFragment : Fragment() {
 

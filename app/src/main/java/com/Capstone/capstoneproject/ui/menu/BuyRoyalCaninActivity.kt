@@ -1,15 +1,16 @@
-package com.Capstone.capstoneproject.menu
+package com.Capstone.capstoneproject.ui.menu
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.Capstone.capstoneproject.R
 
-class BritishShorthairActivity : AppCompatActivity() {
+class BuyRoyalCaninActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_british_shorthair)
+        setContentView(R.layout.activity_buy_royal_canin)
+
         val actionbar =supportActionBar
-        actionbar!!.title = "Adopt"
+        actionbar!!.title = "Buy Item"
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
     }
 }

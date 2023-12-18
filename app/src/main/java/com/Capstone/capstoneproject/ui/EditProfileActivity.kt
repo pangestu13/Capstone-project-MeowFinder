@@ -1,16 +1,11 @@
-package com.Capstone.capstoneproject
+package com.Capstone.capstoneproject.ui
 
-import android.annotation.SuppressLint
-import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.constraintlayout.widget.ConstraintLayout
+import com.Capstone.capstoneproject.R
 import com.Capstone.capstoneproject.databinding.ActivityEditProfileBinding
-import kotlinx.coroutines.NonCancellable.start
 
 class EditProfileActivity : AppCompatActivity() {
 
@@ -36,7 +31,7 @@ class EditProfileActivity : AppCompatActivity() {
     private fun setupAction(root: ConstraintLayout) {
         _binding.let { bind ->
             bind.btnSaveChange.setOnClickListener {
-                startActivity((Intent(this,ProfileFragment::class.java)))
+                startActivity((Intent(this, ProfileFragment::class.java)))
             }
         }
     }
