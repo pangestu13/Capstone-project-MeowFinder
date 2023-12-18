@@ -42,4 +42,7 @@
     <string name="createakun">Create Account</string>
     <string name="punyaakun">You have an account?</string>
     <string name="masuk">Login</string>
+    <string name="resetpw">Reset Password</string>
+    <string name="verificode">Verification Code</string>
+    <string name="aturulangpw">Reset Password</string>
 </resources>
