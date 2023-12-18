@@ -35,11 +35,11 @@ class KameraFragment : Fragment() {
             }
         }
 
-//    private fun allPermissionsGranted() =
-//        ContextCompat.checkSelfPermission(
-//            requireActivity(),
-//            REQUIRED_PERMISSION
-//        ) == PackageManager.PERMISSION_GRANTED
+    private fun allPermissionsGranted() =
+        ContextCompat.checkSelfPermission(
+            requireActivity(),
+            REQUIRED_PERMISSION
+        ) == PackageManager.PERMISSION_GRANTED
 
 
     override fun onCreateView(
@@ -49,9 +49,6 @@ class KameraFragment : Fragment() {
         _binding = FragmentKameraBinding.inflate(inflater, container, false)
         return _binding?.root
 
-//        if (!allPermissionsGranted()) {
-//            requestPermissionLauncher.launch(REQUIRED_PERMISSION)
-//        }
     }
 
     //galeri
@@ -74,13 +71,14 @@ class KameraFragment : Fragment() {
         launcherIntentCamera.launch(currentImageUri)
     }
 
-
     private val launcherIntentCamera = registerForActivityResult(
         ActivityResultContracts.TakePicture()
     ) { isSuccess ->
         if (isSuccess) {
         }
     }
+
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -94,8 +92,9 @@ class KameraFragment : Fragment() {
 
     }
 
-
-
+    companion object {
+        private const val REQUIRED_PERMISSION = Manifest.permission.CAMERA
+    }
 
 
 }
