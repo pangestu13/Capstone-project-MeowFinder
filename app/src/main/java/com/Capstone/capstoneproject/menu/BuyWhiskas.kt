@@ -1,14 +1,12 @@
-package com.Capstone.capstoneproject
+package com.Capstone.capstoneproject.menu
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.core.content.ContentProviderCompat.requireContext
+import com.Capstone.capstoneproject.R
 import com.Capstone.capstoneproject.databinding.ActivityBuyItemBinding
-import com.Capstone.capstoneproject.databinding.ActivityEditProfileBinding
 
-class BuyItemActivity : AppCompatActivity() {
+class BuyWhiskas : AppCompatActivity() {
 
     private lateinit var _binding: ActivityBuyItemBinding
     override fun onCreate(savedInstanceState: Bundle?) {

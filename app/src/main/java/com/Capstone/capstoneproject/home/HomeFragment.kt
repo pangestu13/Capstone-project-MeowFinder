@@ -1,4 +1,4 @@
-package com.Capstone.capstoneproject
+package com.Capstone.capstoneproject.home
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -7,12 +7,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import androidx.fragment.app.activityViewModels
-import androidx.lifecycle.viewmodel.ViewModelFactoryDsl
-import androidx.navigation.fragment.findNavController
+import com.Capstone.capstoneproject.menu.BuyWhiskas
 import com.Capstone.capstoneproject.databinding.FragmentHomeBinding
-import com.Capstone.logined.LoginViewModel
+import com.Capstone.capstoneproject.menu.AdoptPersianActivity
+import com.Capstone.capstoneproject.menu.BritishShorthairActivity
+import com.Capstone.capstoneproject.menu.BuyRoyalCaninActivity
 
 class HomeFragment : Fragment() {
 
@@ -32,6 +31,7 @@ class HomeFragment : Fragment() {
 
         setupAction()
     }
+
     override fun onDestroyView() {
         super.onDestroyView()
 
@@ -42,9 +42,24 @@ class HomeFragment : Fragment() {
     private fun setupAction() {
         binding?.let { bind ->
             bind.btnRegister.setOnClickListener {
-                startActivity((Intent(requireActivity(),BuyItemActivity::class.java)))
+                startActivity((Intent(requireActivity(), BuyWhiskas::class.java)))
             }
         }
-    }
+        binding?.let { bind ->
+            bind.btnImageView4.setOnClickListener {
+                startActivity((Intent(requireActivity(), BuyRoyalCaninActivity::class.java)))
+            }
+        }
+        binding?.let { bind ->
+            bind.btnImageView1.setOnClickListener {
+                startActivity((Intent(requireActivity(), AdoptPersianActivity::class.java)))
+            }
+        }
+        binding?.let { bind ->
+            bind.btnImageView2.setOnClickListener {
+                startActivity((Intent(requireActivity(), BritishShorthairActivity::class.java)))
+            }
 
+        }
+    }
 }

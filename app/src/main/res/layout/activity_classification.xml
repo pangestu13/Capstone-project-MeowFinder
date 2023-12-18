@@ -67,6 +67,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:text="@string/adopt"
+            android:background="@drawable/background_button"
             android:layout_gravity="center_horizontal"
             android:textColor="@color/white"/>
 

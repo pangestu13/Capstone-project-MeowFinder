@@ -1,4 +1,4 @@
-package com.Capstone.capstoneproject
+package com.Capstone.capstoneproject.Camera
 
 import android.net.Uri
 import android.os.Bundle
@@ -7,18 +7,39 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.activity.result.PickVisualMediaRequest
 import androidx.activity.result.contract.ActivityResultContracts
 import com.Capstone.capstoneproject.databinding.FragmentKameraBinding
 import getImageUri
+import android.Manifest
+import android.content.pm.PackageManager
+import androidx.core.content.ContextCompat
 
 
-class KameraFragment : Fragment(), View.OnClickListener{
+class KameraFragment : Fragment() {
 
 
     private var _binding: FragmentKameraBinding? = null
     private val binding get() = _binding
     private var currentImageUri: Uri? = null
+
+    private val requestPermissionLauncher =
+        registerForActivityResult(
+            ActivityResultContracts.RequestPermission()
+        ) { isGranted: Boolean ->
+            if (isGranted) {
+                Toast.makeText(requireActivity(), "Permission request granted", Toast.LENGTH_LONG).show()
+            } else {
+                Toast.makeText(requireActivity(), "Permission request denied", Toast.LENGTH_LONG).show()
+            }
+        }
+
+//    private fun allPermissionsGranted() =
+//        ContextCompat.checkSelfPermission(
+//            requireActivity(),
+//            REQUIRED_PERMISSION
+//        ) == PackageManager.PERMISSION_GRANTED
 
 
     override fun onCreateView(
@@ -28,7 +49,9 @@ class KameraFragment : Fragment(), View.OnClickListener{
         _binding = FragmentKameraBinding.inflate(inflater, container, false)
         return _binding?.root
 
-
+//        if (!allPermissionsGranted()) {
+//            requestPermissionLauncher.launch(REQUIRED_PERMISSION)
+//        }
     }
 
     //galeri
@@ -71,9 +94,7 @@ class KameraFragment : Fragment(), View.OnClickListener{
 
     }
 
-    override fun onClick(v: View) {
 
-    }
 
 
 
