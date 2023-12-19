@@ -4,31 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.ClassificationActivity">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="86dp"
-        android:orientation="horizontal"
-        tools:ignore="MissingConstraints">
-
-        <ImageView
-            android:id="@+id/back_home"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/btn_back"
-            android:elevation="20dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="@font/poppins_bold"
-            android:text="Classification"
-            android:textSize="20dp"
-            android:layout_margin="10dp"/>
-
-    </LinearLayout>
+    tools:context=".ui.classification.ClassificationActivity">
 
     <LinearLayout
         android:layout_width="350dp"
@@ -39,7 +15,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/name_cat"
+            android:id="@+id/cat_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/cat_name"
@@ -48,13 +24,33 @@
             android:layout_gravity="center"/>
 
         <ImageView
+            android:id="@+id/cat_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/cat_himalaya"
             android:layout_marginTop="24dp"
             android:layout_gravity="center"
             />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ras : "
+                android:fontFamily="@font/poppins_bold"/>
         <TextView
+            android:id="@+id/cat_ras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ras"
+            android:fontFamily="@font/poppins_bold"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cat_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/description"

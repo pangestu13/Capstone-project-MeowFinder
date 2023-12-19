@@ -13,8 +13,21 @@ import androidx.activity.result.contract.ActivityResultContracts
 import com.Capstone.capstoneproject.databinding.FragmentKameraBinding
 import getImageUri
 import android.Manifest
+import android.content.Intent
 import android.content.pm.PackageManager
 import androidx.core.content.ContextCompat
+import androidx.lifecycle.lifecycleScope
+import com.Capstone.capstoneproject.R
+import com.Capstone.capstoneproject.api.ApiConfig
+import com.Capstone.capstoneproject.ui.classification.ClassificationActivity
+import com.google.gson.Gson
+import kotlinx.coroutines.launch
+import okhttp3.MediaType.Companion.toMediaType
+import okhttp3.MultipartBody
+import okhttp3.RequestBody.Companion.asRequestBody
+import okhttp3.RequestBody.Companion.toRequestBody
+import retrofit2.HttpException
+import uriToFile
 
 
 class KameraFragment : Fragment() {
@@ -48,7 +61,6 @@ class KameraFragment : Fragment() {
     ): View? {
         _binding = FragmentKameraBinding.inflate(inflater, container, false)
         return _binding?.root
-
     }
 
     //galeri
@@ -75,8 +87,17 @@ class KameraFragment : Fragment() {
         ActivityResultContracts.TakePicture()
     ) { isSuccess ->
         if (isSuccess) {
-        }
+            currentImageUri?.let {
+
+                Log.d("Image URI", "showImage: $it")
+                val intent = Intent(requireActivity(), ClassificationActivity::class.java)
+                intent.putExtra(EXTRA_IMAGE_URI, it.toString())
+                startActivity(intent)
+            }
     }
+    }
+
+
 
 
 
@@ -94,7 +115,9 @@ class KameraFragment : Fragment() {
 
     companion object {
         private const val REQUIRED_PERMISSION = Manifest.permission.CAMERA
+        const val EXTRA_IMAGE_URI = "IMAGE_URI"
     }
+
 
 
 }
