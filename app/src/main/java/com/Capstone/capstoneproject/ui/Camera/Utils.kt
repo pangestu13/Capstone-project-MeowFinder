@@ -7,6 +7,8 @@ import android.provider.MediaStore
 import androidx.core.content.FileProvider
 import cz.msebera.httpclient.android.BuildConfig
 import java.io.File
+import java.io.FileOutputStream
+import java.io.InputStream
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
@@ -43,3 +45,15 @@ private fun getImageUriForPreQ(context: Context): Uri {
     )
     //content://com.dicoding.picodiploma.mycamera.fileprovider/my_images/MyCamera/20230825_133659.jpg
 }
+
+//fun uriToFile(imageUri: Uri, context: Context): File {
+//    val myFile = createCustomTempFile(context)
+//    val inputStream = context.contentResolver.openInputStream(imageUri) as InputStream
+//    val outputStream = FileOutputStream(myFile)
+//    val buffer = ByteArray(1024)
+//    var length: Int
+//    while (inputStream.read(buffer).also { length = it } > 0) outputStream.write(buffer, 0, length)
+//    outputStream.close()
+//    inputStream.close()
+//    return myFile
+//}
