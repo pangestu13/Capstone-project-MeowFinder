@@ -51,7 +51,8 @@
             android:parentActivityName=".ui.home.MainActivity" />
         <activity
             android:name=".ui.classification.ClassificationActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".ui.home.MainActivity"/>
         <activity
             android:name=".ui.EditProfileActivity"
             android:exported="false"
