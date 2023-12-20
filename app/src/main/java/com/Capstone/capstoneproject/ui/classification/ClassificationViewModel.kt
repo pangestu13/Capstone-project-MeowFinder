@@ -1,12 +1,14 @@
 package com.Capstone.capstoneproject.ui.classification
 
+
 import android.app.Application
 import android.util.Log
 import androidx.core.net.toUri
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.Capstone.capstoneproject.api.ApiConfig
-import com.Capstone.capstoneproject.api.JsonMember4
+import com.Capstone.capstoneproject.api.ClassificationResponse
+import com.Capstone.capstoneproject.api.Kucing
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.MultipartBody
 import okhttp3.RequestBody.Companion.asRequestBody
@@ -15,41 +17,49 @@ import retrofit2.Callback
 import retrofit2.Response
 import uriToFile
 
-class ClassificationViewModel(private val  application: Application): ViewModel(){
+class ClassificationViewModel(private val application: Application) : ViewModel() {
     val imageUri = MutableLiveData<String>()
-    fun classification(){
+    val isLoading = MutableLiveData<Boolean>()
 
-        imageUri.value?.let {
-            val imageFile = uriToFile(it.toUri(), application)
+    val result = MutableLiveData<Kucing>()
 
-            val reqFile = MultipartBody.Part.createFormData(
-                "file",
-                imageFile.name,
-                imageFile.asRequestBody("image/jpg".toMediaType())
-            )
+    fun classification(image: String) {
+        isLoading.value = true
+        val imageFile = uriToFile(image.toUri(), application)
 
-            val client = ApiConfig.getApiService().getresponse(reqFile)
+        val reqFile = MultipartBody.Part.createFormData(
+            "file",
+            imageFile.name,
+            imageFile.asRequestBody("image/jpg".toMediaType())
+        )
 
-            client.enqueue(object : Callback<JsonMember4> {
-                override fun onResponse(
-                    call: Call<JsonMember4>,
-                    response: Response<JsonMember4>
-                ) {
-                    if (response.isSuccessful) {
-                        Log.i("berhasil", "Success : ${response.body()}")
+        val client = ApiConfig.getApiService().getresponse(reqFile)
 
-                    } else {
-                        Log.e("berhasil", "Error ${response.code()}: ${response.errorBody()?.string()}")
-
+        client.enqueue(object : Callback<ClassificationResponse> {
+            override fun onResponse(
+                call: Call<ClassificationResponse>,
+                response: Response<ClassificationResponse>
+            ) {
+                isLoading.value = false
+                if (response.isSuccessful) {
+                    Log.i("ClassificationViewModel", "Success : ${response.body()}")
+                    response.body()?.let { resBody ->
+                        result.value = resBody.data[0]
                     }
+                } else {
+                    Log.e(
+                        "ClassificationViewModel",
+                        "Error ${response.code()}: ${response.errorBody()?.string()}"
+                    )
+
                 }
+            }
 
-                override fun onFailure(call: Call<JsonMember4>, t: Throwable) {
-                    Log.e("berhasil", t.message.toString())
+            override fun onFailure(call: Call<ClassificationResponse>, t: Throwable) {
+                Log.e("ClassificationViewModel", t.message.toString())
+                isLoading.value = false
+            }
 
-                }
-
-            })
-        }
+        })
     }
 }

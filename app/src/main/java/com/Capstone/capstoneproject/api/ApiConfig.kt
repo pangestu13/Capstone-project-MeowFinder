@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class ApiConfig {
     companion object {
-        private const val BASE_URL = "https://meowyanto-z3lu7expfa-et.a.run.app"
+        private const val BASE_URL = "https://meowgaga-z3lu7expfa-et.a.run.app"
 
         private var token = ""
         fun setToken(newToken: String) {

@@ -63,4 +63,14 @@ dependencies {
     implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1") //untuk lifecycleScope
 
+    implementation("com.github.bumptech.glide:glide:4.13.1")
+    implementation("de.hdodenhof:circleimageview:3.1.0")
+    implementation("androidx.exifinterface:exifinterface:1.3.6")
+
+//    //viewmodel
+//    implementation("androidx.lifecycle:lifecycle-viewmodel:2.6.2")
+//    implementation("androidx.lifecycle:lifecycle-livedata:2.6.2")
+//    implementation("androidx.activity:activity-ktx:1.8.0")
+//    implementation("androidx.fragment:fragment-ktx:1.6.1")
+
 }

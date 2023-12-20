@@ -8,8 +8,8 @@ import retrofit2.http.Part
 
 interface ApiService {
     @Multipart
-    @POST("/prediction")
+    @POST("/")
     fun getresponse(
         @Part file: MultipartBody.Part,
-    ): Call<JsonMember4>
+    ): Call<ClassificationResponse>
 }

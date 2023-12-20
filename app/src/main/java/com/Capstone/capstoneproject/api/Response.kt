@@ -2,38 +2,31 @@ package com.Capstone.capstoneproject.api
 
 import com.google.gson.annotations.SerializedName
 
-data class Responser(
+data class ClassificationResponse(
 
 	@field:SerializedName("data")
-	val data: Data? = null,
+	val data: List<Kucing>,
 
 	@field:SerializedName("status")
-	val status: Status? = null
+	val status: Status
 )
 
-data class Data(
-
-	@field:SerializedName("4")
-	val jsonMember4: JsonMember4? = null
-)
-
-data class JsonMember4(
+data class Kucing(
 
 	@field:SerializedName("Ras")
 	val ras: String? = null,
 
-	@field:SerializedName(" foto")
+	@field:SerializedName("Foto")
 	val foto: String? = null,
 
-	@field:SerializedName("deskripsi")
+	@field:SerializedName("Deskripsi")
 	val deskripsi: String? = null
 )
 
 data class Status(
-
 	@field:SerializedName("code")
-	val code: Int? = null,
+	val code: Int,
 
 	@field:SerializedName("message")
-	val message: String? = null
+	val message:String
 )
