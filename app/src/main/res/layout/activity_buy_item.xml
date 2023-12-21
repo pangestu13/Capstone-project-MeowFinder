@@ -7,14 +7,14 @@
     tools:context=".ui.menu.BuyWhiskas">
 
 
-
     <LinearLayout
-        android:layout_width="350dp"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="100dp"
-        android:orientation="vertical">
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="24dp"
+        >
 
         <TextView
             android:id="@+id/name_cat"
@@ -24,6 +24,18 @@
             android:fontFamily="@font/poppins_bold"
             android:textSize="24dp"
             android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+
 
         <ImageView
             android:id="@+id/buy_item"
@@ -47,7 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="100dp"
             android:background="@drawable/background_button"
             android:text="@string/btn_BuyItem"
             android:textColor="@color/white" />

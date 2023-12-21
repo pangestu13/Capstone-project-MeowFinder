@@ -12,6 +12,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="24dp"
        >
 
         <TextView
@@ -22,7 +23,7 @@
             android:fontFamily="@font/poppins_bold"
             android:text="@string/ambil_atau_pilih_foto"
             android:textSize="20dp"
-            android:layout_marginTop="22dp"/>
+            android:layout_marginTop="32dp"/>
 
 
     </LinearLayout>
@@ -48,7 +49,7 @@
             android:layout_height="66dp"
             android:layout_gravity="center"
             android:fontFamily="@font/poppinslight"
-            android:text="Ambil foto hewan dan kami akan mencarikan daskripsi hewan tersebut"
+            android:text="@string/txt_takefoto"
             android:textAlignment="center" />
 
         <Button
@@ -59,6 +60,7 @@
             android:layout_gravity="center_horizontal"
             android:textColor="@color/black"
             android:background="@drawable/background_button"
+            android:elevation="20dp"
             />
 
         <Button

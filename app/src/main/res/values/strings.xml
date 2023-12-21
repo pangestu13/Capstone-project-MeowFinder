@@ -11,9 +11,9 @@
     <string name="hello_camera_fragment">Hello kamera fragment</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello profile fragment</string>
-    <string name="take_foto">Ambil Foto</string>
-    <string name="teke_galeri">Ambil Foto dari Galeri</string>
-    <string name="ambil_atau_pilih_foto">Ambil atau Pilih Foto</string>
+    <string name="take_foto">Take Picture From Camera</string>
+    <string name="teke_galeri">Take Picture From Gallery</string>
+    <string name="ambil_atau_pilih_foto">Take or Select  Photo</string>
     <string name="Profile">Profile</string>
     <string name="name_profile">Danel Purwadi</string>
     <string name="username">@Purwadi13</string>
@@ -51,4 +51,5 @@
     <string name="description_item_royal_canin"><![CDATA[ROYAL CANIN ADULT PERSIAN 400GR FRESHPACK\nMakanan lengkap dan seimbang untuk kucing dewasa - Spesial kucing Persia - Umur lebih dari 12 bulan.\n\nSPESIAL RAMBUT PANJANG\nRambut yang panjang dan indah dengan undercoat yang padat, merupakan ciri kucing Persia. PERSIAN mengandung kompleks nutrien eksklusif yang mendukung pertahanan kulit dan mempertahankan kesehatan kulit dan rambut. Formula yang diperkaya asam lemak omega 3 (EPA & DHA) dan asam lemak omega 6.\n\nREDUKSI HAIRBALL\nKombinasi serat spesifik yang membantu stimulasi transit usust dan secara alami membatasi pembentukan hairball.]]></string>
     <string name="ras">Hibrida</string>
     <string name="empty_image_warning">Silakan masukkan berkas gambar terlebih dahulu.</string>
+    <string name="txt_takefoto">Take a photo of the cat and we\'ll find the breed</string>
 </resources>
