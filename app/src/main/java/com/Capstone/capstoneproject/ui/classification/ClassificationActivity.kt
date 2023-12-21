@@ -1,17 +1,13 @@
 package com.Capstone.capstoneproject.ui.classification
 
-import android.nfc.NfcAdapter.EXTRA_ID
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.activity.viewModels
-
 import com.Capstone.capstoneproject.R
 import com.Capstone.capstoneproject.databinding.ActivityClassificationBinding
-
 import com.Capstone.capstoneproject.ui.Camera.KameraFragment
 import com.Capstone.capstoneproject.ui.ViewModelFactory
-
 import com.bumptech.glide.Glide
 
 
