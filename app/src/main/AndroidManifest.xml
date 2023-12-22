@@ -8,7 +8,9 @@
 
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"/>
     <uses-permission android:name="android.permission.INTERNET" />
 <!--    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
 <!--    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
@@ -23,6 +25,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MeowFinder"
+        android:enableOnBackInvokedCallback="true"
         tools:targetApi="31">
         <activity
             android:name=".ui.menu.BritishShorthairActivity"
@@ -43,7 +46,7 @@
             android:name="com.Capstone.logined.LoginActivity"
             android:exported="false" />
         <activity
-            android:name="com.Capstone.getstarted.getstartActivity"
+            android:name=".ui.home.MainActivity"
             android:exported="false" />
         <activity
             android:name=".ui.menu.BuyWhiskas"
@@ -58,7 +61,7 @@
             android:exported="false"
             android:parentActivityName=".ui.home.MainActivity" />
         <activity
-            android:name=".SplashScreenActivity"
+            android:name="com.Capstone.getstarted.getstartActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -68,7 +71,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.home.MainActivity"
+            android:name=".SplashScreenActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
 

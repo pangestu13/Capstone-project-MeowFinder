@@ -53,7 +53,7 @@
 
 
                 <ImageView
-                    android:id="@+id/photo_profile"
+                    android:id="@+id/iv_imageProfile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/photo_profile"
@@ -94,6 +94,7 @@
                     android:fontFamily="@font/poppinslight"/>
 
                 <EditText
+                    android:id="@+id/nameEt"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
                     android:hint="   Enter Full Name"
@@ -115,6 +116,7 @@
                     android:fontFamily="@font/poppinslight"/>
 
                 <EditText
+                    android:id="@+id/usernameEt"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
                     android:hint="   Enter Username"
@@ -129,6 +131,7 @@
 
                 <!--            email-->
                 <TextView
+                    android:id="@+id/emailEt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Email"

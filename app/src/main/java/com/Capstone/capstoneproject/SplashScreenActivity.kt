@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import com.Capstone.capstoneproject.ui.home.MainActivity
+import com.Capstone.getstarted.getstartActivity
 
 class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +16,7 @@ class SplashScreenActivity : AppCompatActivity() {
 
         val handler = Handler()
         handler.postDelayed({
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, getstartActivity::class.java)
             startActivity(intent)
         },3000)
     }
