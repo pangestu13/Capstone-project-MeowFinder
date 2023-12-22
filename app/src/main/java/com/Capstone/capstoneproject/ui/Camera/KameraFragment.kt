@@ -67,12 +67,16 @@ class KameraFragment : Fragment() {
     private fun startGallery() {
         launcherGallery.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly))
     }
-
     private val launcherGallery = registerForActivityResult(
         ActivityResultContracts.PickVisualMedia()
     ) { uri: Uri? ->
         if (uri != null) {
             currentImageUri = uri
+            Log.d("Image URI", "showImage: $uri")
+            val intent = Intent(requireActivity(), ClassificationActivity::class.java)
+            intent.putExtra(EXTRA_IMAGE_URI, uri.toString())
+            startActivity(intent)
+
         } else {
             Log.d("Photo Picker", "No media selected")
         }
