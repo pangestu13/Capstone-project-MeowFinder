@@ -61,6 +61,9 @@
             android:exported="false"
             android:parentActivityName=".ui.home.MainActivity" />
         <activity
+            android:name="com.Capstone.resetpassword.ResetPasswordActivity"
+            android:exported="false" > </activity>
+        <activity
             android:name="com.Capstone.getstarted.getstartActivity"
             android:exported="true"
             android:screenOrientation="portrait">
