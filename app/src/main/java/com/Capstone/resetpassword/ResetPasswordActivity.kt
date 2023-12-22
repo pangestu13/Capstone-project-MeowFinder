@@ -20,6 +20,8 @@
             binding = ActivityResetPasswordBinding.inflate(layoutInflater)
             setContentView(binding.root)
 
+            auth = FirebaseAuth.getInstance()
+
             binding.btnAturulangpwbt.setOnClickListener {
                 val email = binding.emailEditText.text.toString().trim()
 
