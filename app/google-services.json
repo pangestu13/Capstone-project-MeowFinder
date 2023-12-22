@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "509348974265",
+    "firebase_url": "https://meowfinder-65df8-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "meowfinder-65df8",
+    "storage_bucket": "meowfinder-65df8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509348974265:android:aaf9d73311ed17f0f91568",
+        "android_client_info": {
+          "package_name": "com.Capstone.capstoneproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqeA6htqNdRufSfHY8kpU4mfOYgPxsCdc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

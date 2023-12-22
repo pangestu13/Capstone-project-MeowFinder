@@ -42,7 +42,6 @@ class ProfileFragment : Fragment(), View.OnClickListener {
 
             val intent = Intent(requireContext(), LoginActivity::class.java)
             startActivity(intent)
-            requireActivity().finish()
         }
 
         fetchUserData()
@@ -57,11 +56,13 @@ class ProfileFragment : Fragment(), View.OnClickListener {
                 .addValueEventListener(object : ValueEventListener{
                     override fun onDataChange(snapshot: DataSnapshot) {
                         val username = snapshot.child("username").value
+                        val name = snapshot.child("name").value
                         val email = snapshot.child("email").value
                         val profileImage = snapshot.child("profileImage").value
 
                         // Update UI with retrieved data
                         binding.idUsername.text = username.toString()
+                        binding.nemeProfile.text = name.toString()
                         binding.idEmail.text = email.toString()
                         // Load profile image using Glide or Picasso
                         Glide.with(this@ProfileFragment)
