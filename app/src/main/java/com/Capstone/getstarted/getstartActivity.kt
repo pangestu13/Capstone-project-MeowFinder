@@ -25,4 +25,5 @@ class getstartActivity : AppCompatActivity() {
             startActivity(Intent(this, LoginActivity::class.java))
         }
     }
+
 }
