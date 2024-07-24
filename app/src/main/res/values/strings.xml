@@ -32,7 +32,7 @@
     <string name="login">Hello, CatsLovers!</string>
     <string name="imail">Email</string>
     <string name="password">Password</string>
-    <string name="logined">Get Started</string>
+    <string name="logined">Login</string>
     <string name="lupapw">Forget Password ?</string>
     <string name="tidakpunyaakun">Don’t have an account? </string>
     <string name="buatakun">Create Account</string>

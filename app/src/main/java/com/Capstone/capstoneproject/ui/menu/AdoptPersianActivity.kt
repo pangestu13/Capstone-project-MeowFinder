@@ -22,6 +22,6 @@ class AdoptPersianActivity : AppCompatActivity() {
         binding.btnAdoptus.setOnClickListener { adoptus() }
     }
     private fun adoptus() {
-        Toast.makeText(this, "This feature is not yet available", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Fitur ini belum tersedia", Toast.LENGTH_SHORT).show()
     }
 }
